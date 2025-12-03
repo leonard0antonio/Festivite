@@ -1,0 +1,106 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f2f2f2;
+  padding: 20px;
+}
+
+/* LAYOUT */
+.app {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* CARD DO FORMULÁRIO */
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 360px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.card h1 {
+  margin-bottom: 15px;
+}
+
+/* FORMULÁRIO */
+.card label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.card input[type="text"],
+.card input[type="date"],
+.card input[type="color"],
+.card input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.card input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+/* BOTÕES */
+.actions {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.actions button {
+  flex: 1;
+  margin-right: 10px;
+  padding: 10px;
+  border: none;
+  background: #1e40af;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.actions button:last-child {
+  margin-right: 0;
+}
+
+.actions button:hover {
+  background: #162f87;
+}
+
+/* ÁREA DE PRÉ-VISUALIZAÇÃO */
+.preview {
+  flex: 1;
+  min-width: 420px;
+}
+
+.preview h2 {
+  margin-bottom: 10px;
+}
+
+.preview-box {
+  background: #ddd;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+canvas {
+  width: 100%;
+  border-radius: 10px;
+  background: #fff;
+}

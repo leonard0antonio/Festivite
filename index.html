@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Festivite — Criador de Convites</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <main class="app">
+    <section class="card">
+      <h1>Festivite</h1>
+      <form id="inviteForm" novalidate>
+        <label for="eventTitle">Título</label>
+        <input id="eventTitle" type="text" placeholder="Ex: Aniversário da Maria">
+
+        <label for="eventDate">Data</label>
+        <input id="eventDate" type="date">
+
+        <label for="eventLocation">Local</label>
+        <input id="eventLocation" type="text" placeholder="Local do evento">
+
+        <label for="bgColor">Cor de fundo</label>
+        <input id="bgColor" type="color" value="#0b1220">
+
+        <label for="imageInput">Imagem (arquivo)</label>
+        <input id="imageInput" type="file" accept="image/*">
+
+        <label><input id="terms" type="checkbox"> Aceito os termos</label>
+
+        <div class="actions">
+          <button id="previewBtn" type="button">Pré-visualizar</button>
+          <button id="generateBtn" type="button">Gerar PNG</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="preview">
+      <h2>Pré-visualização</h2>
+      <div class="preview-box">
+        <canvas id="inviteCanvas" width="820" height="480"></canvas>
+      </div>
+    </section>
+  </main>
+  <script src="../js/script.js"></script>
+</body>
+</html>
